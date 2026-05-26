@@ -776,6 +776,13 @@ body::after {
   position: relative;
   border: 1px solid var(--c-border);
   overflow: hidden;
+  transition: all 0.4s var(--ease-out);
+}
+
+.leader-profile:hover .leader-image-wrap {
+  border-color: rgba(204,0,0,0.8);
+  box-shadow: 0 10px 30px rgba(204,0,0,0.3);
+  transform: translateY(-8px);
 }
 
 .leader-img {
@@ -787,7 +794,7 @@ body::after {
 }
 
 .leader-profile:hover .leader-img {
-  filter: contrast(1.1);
+  filter: brightness(1.15) contrast(1.05) !important;
 }
 
 .leader-overlay {
